@@ -100,7 +100,7 @@ main();
 
 // Root Route - Basic test route
 app.get('/', (req, res) => {
-     res.send('Root Route');
+     res.render('home.ejs');
 });
 
 // Use routes for listings, reviews, and user actions

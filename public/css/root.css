@@ -1,0 +1,108 @@
+/* Hero Section Styling */
+.hero-section {
+     text-align: center;
+     padding: 50px;
+     margin-top: 100px;
+     background-color: #f1f1f1;
+     border-radius: 8px;
+     opacity: 0;
+     animation: fadeIn 2s forwards;
+     /* Fade-in animation */
+}
+
+.hero-section h2 {
+     font-size: 3rem;
+     color: #333;
+     margin-bottom: 20px;
+     opacity: 0;
+     animation: fadeInUp 1.5s ease-out 0.5s forwards;
+     /* Slide-up effect */
+}
+
+.hero-section h4 {
+     font-size: 1.5rem;
+     color: #666;
+     margin-bottom: 30px;
+     max-width: 80%;
+     margin-left: auto;
+     margin-right: auto;
+     opacity: 0;
+     animation: fadeInUp 1.5s ease-out 1s forwards;
+     /* Slide-up effect */
+}
+
+.hero-section a {
+     text-decoration: none;
+     background-color: #007bff;
+     color: white;
+     padding: 15px 30px;
+     border-radius: 50px;
+     font-size: 1.2rem;
+     transition: background-color 0.3s ease, transform 0.2s ease;
+     /* Smooth hover effect */
+     opacity: 0;
+     animation: fadeInUp 1.5s ease-out 1.5s forwards;
+     /* Slide-up effect */
+}
+
+.hero-section a:hover {
+     background-color: #0056b3;
+     transform: scale(1.1);
+     /* Slight zoom effect on hover */
+}
+
+/* Keyframe Animations */
+@keyframes fadeIn {
+     from {
+          opacity: 0;
+     }
+
+     to {
+          opacity: 1;
+     }
+}
+
+@keyframes fadeInUp {
+     from {
+          opacity: 0;
+          transform: translateY(20px);
+          /* Start from below */
+     }
+
+     to {
+          opacity: 1;
+          transform: translateY(0);
+          /* Move to original position */
+     }
+}
+
+/* Media Queries for Responsiveness */
+@media (max-width: 768px) {
+     .hero-section h2 {
+          font-size: 2.5rem;
+     }
+
+     .hero-section h4 {
+          font-size: 1.2rem;
+     }
+
+     .hero-section a {
+          padding: 12px 25px;
+          font-size: 1rem;
+     }
+}
+
+@media (max-width: 480px) {
+     .hero-section h2 {
+          font-size: 2rem;
+     }
+
+     .hero-section h4 {
+          font-size: 1rem;
+     }
+
+     .hero-section a {
+          padding: 10px 20px;
+          font-size: 0.9rem;
+     }
+}
